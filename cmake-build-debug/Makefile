@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /Users/sooyeon/Desktop/Dev/Study_Cplusplus/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -84,6 +74,16 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -117,84 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 6
-
-# Build rule for target.
-6 : cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 6
-.PHONY : 6
-
-# fast build rule for target.
-6/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/build
-.PHONY : 6/fast
-
-#=============================================================================
-# Target rules for targets named 7
-
-# Build rule for target.
-7 : cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 7
-.PHONY : 7
-
-# fast build rule for target.
-7/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/7.dir/build.make CMakeFiles/7.dir/build
-.PHONY : 7/fast
-
-#=============================================================================
-# Target rules for targets named 5
-
-# Build rule for target.
-5 : cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 5
-.PHONY : 5
-
-# fast build rule for target.
-5/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/build
-.PHONY : 5/fast
-
-#=============================================================================
-# Target rules for targets named 4
-
-# Build rule for target.
-4 : cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 4
-.PHONY : 4
-
-# fast build rule for target.
-4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/build
-.PHONY : 4/fast
-
-#=============================================================================
-# Target rules for targets named 3
-
-# Build rule for target.
-3 : cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3
-.PHONY : 3
-
-# fast build rule for target.
-3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/build
-.PHONY : 3/fast
-
-#=============================================================================
-# Target rules for targets named 2
-
-# Build rule for target.
-2 : cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 2
-.PHONY : 2
-
-# fast build rule for target.
-2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/build
-.PHONY : 2/fast
-
-#=============================================================================
 # Target rules for targets named 1
 
 # Build rule for target.
@@ -206,102 +128,6 @@ depend:
 1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/build
 .PHONY : 1/fast
-
-Part1/DefaultValue.o: Part1/DefaultValue.cpp.o
-.PHONY : Part1/DefaultValue.o
-
-# target to build an object file
-Part1/DefaultValue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/Part1/DefaultValue.cpp.o
-.PHONY : Part1/DefaultValue.cpp.o
-
-Part1/DefaultValue.i: Part1/DefaultValue.cpp.i
-.PHONY : Part1/DefaultValue.i
-
-# target to preprocess a source file
-Part1/DefaultValue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/Part1/DefaultValue.cpp.i
-.PHONY : Part1/DefaultValue.cpp.i
-
-Part1/DefaultValue.s: Part1/DefaultValue.cpp.s
-.PHONY : Part1/DefaultValue.s
-
-# target to generate assembly for a file
-Part1/DefaultValue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/Part1/DefaultValue.cpp.s
-.PHONY : Part1/DefaultValue.cpp.s
-
-Part1/InlineFunc.o: Part1/InlineFunc.cpp.o
-.PHONY : Part1/InlineFunc.o
-
-# target to build an object file
-Part1/InlineFunc.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/Part1/InlineFunc.cpp.o
-.PHONY : Part1/InlineFunc.cpp.o
-
-Part1/InlineFunc.i: Part1/InlineFunc.cpp.i
-.PHONY : Part1/InlineFunc.i
-
-# target to preprocess a source file
-Part1/InlineFunc.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/Part1/InlineFunc.cpp.i
-.PHONY : Part1/InlineFunc.cpp.i
-
-Part1/InlineFunc.s: Part1/InlineFunc.cpp.s
-.PHONY : Part1/InlineFunc.s
-
-# target to generate assembly for a file
-Part1/InlineFunc.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/Part1/InlineFunc.cpp.s
-.PHONY : Part1/InlineFunc.cpp.s
-
-Part1/NameSp.o: Part1/NameSp.cpp.o
-.PHONY : Part1/NameSp.o
-
-# target to build an object file
-Part1/NameSp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/Part1/NameSp.cpp.o
-.PHONY : Part1/NameSp.cpp.o
-
-Part1/NameSp.i: Part1/NameSp.cpp.i
-.PHONY : Part1/NameSp.i
-
-# target to preprocess a source file
-Part1/NameSp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/Part1/NameSp.cpp.i
-.PHONY : Part1/NameSp.cpp.i
-
-Part1/NameSp.s: Part1/NameSp.cpp.s
-.PHONY : Part1/NameSp.s
-
-# target to generate assembly for a file
-Part1/NameSp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/Part1/NameSp.cpp.s
-.PHONY : Part1/NameSp.cpp.s
-
-Part1/NameSp2.o: Part1/NameSp2.cpp.o
-.PHONY : Part1/NameSp2.o
-
-# target to build an object file
-Part1/NameSp2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/Part1/NameSp2.cpp.o
-.PHONY : Part1/NameSp2.cpp.o
-
-Part1/NameSp2.i: Part1/NameSp2.cpp.i
-.PHONY : Part1/NameSp2.i
-
-# target to preprocess a source file
-Part1/NameSp2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/Part1/NameSp2.cpp.i
-.PHONY : Part1/NameSp2.cpp.i
-
-Part1/NameSp2.s: Part1/NameSp2.cpp.s
-.PHONY : Part1/NameSp2.s
-
-# target to generate assembly for a file
-Part1/NameSp2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/Part1/NameSp2.cpp.s
-.PHONY : Part1/NameSp2.cpp.s
 
 Part1/SimpleAdder.o: Part1/SimpleAdder.cpp.o
 .PHONY : Part1/SimpleAdder.o
@@ -327,54 +153,6 @@ Part1/SimpleAdder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/Part1/SimpleAdder.cpp.s
 .PHONY : Part1/SimpleAdder.cpp.s
 
-Part1/StringIO.o: Part1/StringIO.cpp.o
-.PHONY : Part1/StringIO.o
-
-# target to build an object file
-Part1/StringIO.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/Part1/StringIO.cpp.o
-.PHONY : Part1/StringIO.cpp.o
-
-Part1/StringIO.i: Part1/StringIO.cpp.i
-.PHONY : Part1/StringIO.i
-
-# target to preprocess a source file
-Part1/StringIO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/Part1/StringIO.cpp.i
-.PHONY : Part1/StringIO.cpp.i
-
-Part1/StringIO.s: Part1/StringIO.cpp.s
-.PHONY : Part1/StringIO.s
-
-# target to generate assembly for a file
-Part1/StringIO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/Part1/StringIO.cpp.s
-.PHONY : Part1/StringIO.cpp.s
-
-Part1/UsingDc.o: Part1/UsingDc.cpp.o
-.PHONY : Part1/UsingDc.o
-
-# target to build an object file
-Part1/UsingDc.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/7.dir/build.make CMakeFiles/7.dir/Part1/UsingDc.cpp.o
-.PHONY : Part1/UsingDc.cpp.o
-
-Part1/UsingDc.i: Part1/UsingDc.cpp.i
-.PHONY : Part1/UsingDc.i
-
-# target to preprocess a source file
-Part1/UsingDc.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/7.dir/build.make CMakeFiles/7.dir/Part1/UsingDc.cpp.i
-.PHONY : Part1/UsingDc.cpp.i
-
-Part1/UsingDc.s: Part1/UsingDc.cpp.s
-.PHONY : Part1/UsingDc.s
-
-# target to generate assembly for a file
-Part1/UsingDc.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/7.dir/build.make CMakeFiles/7.dir/Part1/UsingDc.cpp.s
-.PHONY : Part1/UsingDc.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -384,33 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 1"
-	@echo "... 2"
-	@echo "... 3"
-	@echo "... 4"
-	@echo "... 5"
-	@echo "... 6"
-	@echo "... 7"
-	@echo "... Part1/DefaultValue.o"
-	@echo "... Part1/DefaultValue.i"
-	@echo "... Part1/DefaultValue.s"
-	@echo "... Part1/InlineFunc.o"
-	@echo "... Part1/InlineFunc.i"
-	@echo "... Part1/InlineFunc.s"
-	@echo "... Part1/NameSp.o"
-	@echo "... Part1/NameSp.i"
-	@echo "... Part1/NameSp.s"
-	@echo "... Part1/NameSp2.o"
-	@echo "... Part1/NameSp2.i"
-	@echo "... Part1/NameSp2.s"
 	@echo "... Part1/SimpleAdder.o"
 	@echo "... Part1/SimpleAdder.i"
 	@echo "... Part1/SimpleAdder.s"
-	@echo "... Part1/StringIO.o"
-	@echo "... Part1/StringIO.i"
-	@echo "... Part1/StringIO.s"
-	@echo "... Part1/UsingDc.o"
-	@echo "... Part1/UsingDc.i"
-	@echo "... Part1/UsingDc.s"
 .PHONY : help
 
 
