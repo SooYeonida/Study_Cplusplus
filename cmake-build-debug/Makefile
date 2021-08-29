@@ -129,29 +129,29 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/build
 .PHONY : 1/fast
 
-Part1/SimpleAdder.o: Part1/SimpleAdder.cpp.o
-.PHONY : Part1/SimpleAdder.o
+Part2/RefArrElem.o: Part2/RefArrElem.cpp.o
+.PHONY : Part2/RefArrElem.o
 
 # target to build an object file
-Part1/SimpleAdder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/Part1/SimpleAdder.cpp.o
-.PHONY : Part1/SimpleAdder.cpp.o
+Part2/RefArrElem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/Part2/RefArrElem.cpp.o
+.PHONY : Part2/RefArrElem.cpp.o
 
-Part1/SimpleAdder.i: Part1/SimpleAdder.cpp.i
-.PHONY : Part1/SimpleAdder.i
+Part2/RefArrElem.i: Part2/RefArrElem.cpp.i
+.PHONY : Part2/RefArrElem.i
 
 # target to preprocess a source file
-Part1/SimpleAdder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/Part1/SimpleAdder.cpp.i
-.PHONY : Part1/SimpleAdder.cpp.i
+Part2/RefArrElem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/Part2/RefArrElem.cpp.i
+.PHONY : Part2/RefArrElem.cpp.i
 
-Part1/SimpleAdder.s: Part1/SimpleAdder.cpp.s
-.PHONY : Part1/SimpleAdder.s
+Part2/RefArrElem.s: Part2/RefArrElem.cpp.s
+.PHONY : Part2/RefArrElem.s
 
 # target to generate assembly for a file
-Part1/SimpleAdder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/Part1/SimpleAdder.cpp.s
-.PHONY : Part1/SimpleAdder.cpp.s
+Part2/RefArrElem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/Part2/RefArrElem.cpp.s
+.PHONY : Part2/RefArrElem.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 1"
-	@echo "... Part1/SimpleAdder.o"
-	@echo "... Part1/SimpleAdder.i"
-	@echo "... Part1/SimpleAdder.s"
+	@echo "... Part2/RefArrElem.o"
+	@echo "... Part2/RefArrElem.i"
+	@echo "... Part2/RefArrElem.s"
 .PHONY : help
 
 
